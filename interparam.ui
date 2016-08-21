@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InterParam</class>
+ <widget class="QMainWindow" name="InterParam">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>741</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="layGen">
+     <property name="leftMargin">
+      <number>6</number>
+     </property>
+     <property name="topMargin">
+      <number>3</number>
+     </property>
+     <property name="rightMargin">
+      <number>6</number>
+     </property>
+     <property name="bottomMargin">
+      <number>3</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Parametres</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>Utilisateurs</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>img/Patient/user.png</normaloff>img/Patient/user.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnLog">
+           <property name="text">
+            <string>Log</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>img/Vente/Details achteur/business_contact.png</normaloff>img/Vente/Details achteur/business_contact.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnEnTete">
+           <property name="text">
+            <string>Entetes</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>img/Vente/Details achteur/contacts.png</normaloff>img/Vente/Details achteur/contacts.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnData">
+           <property name="text">
+            <string>Données</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>img/Vente/Factures/invoice.png</normaloff>img/Vente/Factures/invoice.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="text">
+            <string>Quitter</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <widget class="QWidget" name="pageUser">
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>641</width>
+             <height>361</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="layVer">
+            <item>
+             <widget class="QTableView" name="tableList"/>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="layBtn">
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnAdd">
+                <property name="text">
+                 <string>Ajouter</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnDel">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string>Supprimer</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="logPag">
+          <widget class="QLabel" name="lblLog">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Les Logs</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="pageParam">
+          <widget class="QPushButton" name="btnValider">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>160</y>
+             <width>101</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Enregistrer</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>631</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="styleSheet">
+               <string notr="true">font: 75 11pt &quot;MS Shell Dlg 2&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Entete du diagnostique</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="txtEntete"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>190</y>
+             <width>631</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="styleSheet">
+               <string notr="true">font: 75 11pt &quot;MS Shell Dlg 2&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Entete de la facture</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="txtFact"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QPushButton" name="btnSaveFact">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>340</y>
+             <width>101</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Enregistrer</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page">
+          <widget class="QPushButton" name="btnErase">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>111</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Vider les données</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>71</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Stockage</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>760</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>InterParam</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>18</x>
+     <y>356</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

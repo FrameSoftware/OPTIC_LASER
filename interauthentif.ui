@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InterAuthentif</class>
+ <widget class="QMainWindow" name="InterAuthentif">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>523</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lgnPass">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>320</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Mot de passe</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lgnNom">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>269</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Nom d'utilisateur</string>
+    </property>
+    <property name="cursorMoveStyle">
+     <enum>Qt::LogicalMoveStyle</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOk">
+    <property name="geometry">
+     <rect>
+      <x>249</x>
+      <y>370</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Connexion</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAnnul">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>370</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Annuler</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>541</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>531</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>img/Optic plus degradé.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>220</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 9pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>Version beta 1</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lgnNom</tabstop>
+  <tabstop>lgnPass</tabstop>
+  <tabstop>btnOk</tabstop>
+  <tabstop>btnAnnul</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
